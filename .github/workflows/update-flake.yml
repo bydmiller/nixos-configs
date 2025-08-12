@@ -15,7 +15,7 @@ jobs:
       paths: ${{ steps.matrix.outputs.paths }}
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
       - name: "Install nix"
         uses: cachix/install-nix-action@master
         with:
@@ -51,7 +51,7 @@ jobs:
         path: ${{ fromJson(needs.nvfetcher_matrix.outputs.paths )}}
     steps:
       - name: "Checkout repository"
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
       - name: "Install nix"
         uses: cachix/install-nix-action@master
         with:
@@ -93,7 +93,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: "Install nix"
         uses: cachix/install-nix-action@master
