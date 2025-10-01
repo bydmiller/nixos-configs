@@ -1,6 +1,6 @@
 {
     "nicksfetch": {
-        "cargoLocks": null,
+        "cargoLock": null,
         "date": "2021-12-10",
         "extract": null,
         "name": "nicksfetch",
