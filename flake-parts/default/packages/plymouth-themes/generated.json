@@ -1,6 +1,6 @@
 {
     "plymouth-themes": {
-        "cargoLocks": null,
+        "cargoLock": null,
         "date": "2023-08-22",
         "extract": null,
         "name": "plymouth-themes",
