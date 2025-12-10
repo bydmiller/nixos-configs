@@ -75,7 +75,7 @@ jobs:
             --build-dir "$(dirname ${{ matrix.path }})" \
             --config "${{ matrix.path }}" --keep-old
       - name: "Create Pull Request"
-        uses: peter-evans/create-pull-request@v7
+        uses: peter-evans/create-pull-request@v8
         with:
           token: "${{ secrets.GITHUB_TOKEN }}"
           title: "ci: bump ${{ matrix.path }}"
@@ -117,7 +117,7 @@ jobs:
         run: nix flake update
 
       - name: Create Pull Request
-        uses: peter-evans/create-pull-request@v7
+        uses: peter-evans/create-pull-request@v8
         with:
           token: "${{ secrets.GITHUB_TOKEN }}"
           title: "ci: bump flake"
