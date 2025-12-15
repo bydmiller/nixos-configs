@@ -54,7 +54,7 @@ jobs:
         shell: bash
         run: nix build .#images.${{ matrix.image }} -o ${{ matrix.image }} --print-build-logs
 
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v6
         with:
           name: ${{ matrix.image }}-iso-image
           path: ${{ matrix.image }}/iso/*.iso
